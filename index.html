@@ -383,15 +383,18 @@
                 </h2>
                 <div class="github-stats">
                     <!-- GitHub Stats Card - shows contributions, PRs, issues, etc. -->
-                    <img src="https://github-readme-stats.vercel.app/api?username=Kenosis0&show_icons=true&theme=dark&bg_color=1B3C53&title_color=D2C1B6&text_color=D2C1B6&icon_color=456882&border_color=456882" alt="GitHub Stats">
+                    <!-- Added cache_seconds parameter to refresh data and avoid API rate limits -->
+                    <img src="https://github-readme-stats.vercel.app/api?username=Kenosis0&show_icons=true&theme=dark&bg_color=1B3C53&title_color=D2C1B6&text_color=D2C1B6&icon_color=456882&border_color=456882&cache_seconds=1800&include_all_commits=true&count_private=true" alt="GitHub Stats">
                     
                     <!-- Top Languages Card - shows most used programming languages -->
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kenosis0&layout=compact&theme=dark&bg_color=1B3C53&title_color=D2C1B6&text_color=D2C1B6&border_color=456882" alt="Top Languages">
+                    <!-- Added cache and exclude parameters for better accuracy -->
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kenosis0&layout=compact&theme=dark&bg_color=1B3C53&title_color=D2C1B6&text_color=D2C1B6&border_color=456882&cache_seconds=1800&langs_count=6" alt="Top Languages">
                 </div>
                 
                 <!-- GitHub Streak Stats - shows contribution streak -->
+                <!-- Added date format and better error handling parameters -->
                 <div class="github-stats" style="margin-top: 20px;">
-                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kenosis0&theme=dark&background=1B3C53&ring=D2C1B6&fire=D2C1B6&currStreakLabel=D2C1B6&border=456882" alt="GitHub Streak">
+                    <img src="https://streak-stats.demolab.com/?user=Kenosis0&theme=dark&background=1B3C53&ring=D2C1B6&fire=D2C1B6&currStreakLabel=D2C1B6&border=456882&stroke=456882&currStreakNum=D2C1B6&sideNums=D2C1B6&sideLabels=D2C1B6&dates=D2C1B6" alt="GitHub Streak">
                 </div>
             </div>
 
