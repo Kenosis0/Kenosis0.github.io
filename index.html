@@ -27,7 +27,6 @@
             padding: 20px;
         }
 
-        /* Main container for the profile */
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -37,7 +36,6 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
         }
 
-        /* Header section with gradient background */
         .header {
             background: linear-gradient(135deg, #234C6A 0%, #456882 100%);
             padding: 60px 40px;
@@ -46,7 +44,6 @@
             overflow: hidden;
         }
 
-        /* Decorative elements in header */
         .header::before {
             content: '';
             position: absolute;
@@ -68,7 +65,6 @@
             z-index: 1;
         }
 
-        /* Profile image styling */
         .profile-img {
             width: 150px;
             height: 150px;
@@ -100,12 +96,10 @@
             font-style: italic;
         }
 
-        /* Main content area */
         .content {
             padding: 40px;
         }
 
-        /* Section styling */
         .section {
             margin-bottom: 40px;
         }
@@ -121,12 +115,10 @@
             gap: 10px;
         }
 
-        /* Icon styling for section titles */
         .icon {
             font-size: 1.2em;
         }
 
-        /* Bio text styling */
         .bio {
             font-size: 1.1em;
             line-height: 1.8;
@@ -134,7 +126,6 @@
             opacity: 0.9;
         }
 
-        /* Skills container - grid layout */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -142,7 +133,6 @@
             margin-top: 20px;
         }
 
-        /* Individual skill card with progress bar */
         .skill-card {
             background: #234C6A;
             padding: 20px;
@@ -171,7 +161,6 @@
             margin-bottom: 8px;
         }
 
-        /* Progress bar container */
         .progress-bar {
             width: 100%;
             height: 8px;
@@ -180,7 +169,6 @@
             overflow: hidden;
         }
 
-        /* Progress bar fill - animated */
         .progress-fill {
             height: 100%;
             background: linear-gradient(90deg, #456882, #D2C1B6);
@@ -193,7 +181,6 @@
             from { width: 0; }
         }
 
-        /* Badge container for technology badges */
         .badges {
             display: flex;
             flex-wrap: wrap;
@@ -201,7 +188,6 @@
             margin-top: 20px;
         }
 
-        /* Individual badge styling */
         .badge {
             background: #456882;
             color: #D2C1B6;
@@ -218,7 +204,6 @@
             transform: scale(1.05);
         }
 
-        /* Current focus section with highlight box */
         .focus-box {
             background: linear-gradient(135deg, #456882 0%, #234C6A 100%);
             padding: 25px;
@@ -233,7 +218,6 @@
             line-height: 1.8;
         }
 
-        /* Stats grid for portfolio statistics */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -241,7 +225,6 @@
             margin-top: 20px;
         }
 
-        /* Individual stat card */
         .stat-card {
             background: #234C6A;
             padding: 25px;
@@ -269,7 +252,6 @@
             opacity: 0.8;
         }
 
-        /* Project showcase section */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -277,7 +259,6 @@
             margin-top: 20px;
         }
 
-        /* Individual project card */
         .project-card {
             background: #234C6A;
             padding: 25px;
@@ -321,7 +302,6 @@
             font-size: 0.8em;
         }
 
-        /* Social links section */
         .social-links {
             display: flex;
             justify-content: center;
@@ -330,7 +310,6 @@
             flex-wrap: wrap;
         }
 
-        /* Social link button styling */
         .social-link {
             display: inline-flex;
             align-items: center;
@@ -352,7 +331,156 @@
             box-shadow: 0 5px 15px rgba(210, 193, 182, 0.3);
         }
 
-        /* Footer section */
+        .interactives {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px 40px;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 300px;
+            padding: 25px;
+            border-radius: 10px;
+            background-color: #2c3e50;
+            aspect-ratio: 1 / 1;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        /* Snake Game Styles */
+        .snake-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .game-container {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        .game-container h1 {
+            color: #9bbc0f;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .score-board {
+            background-color: #0f380f;
+            color: #9bbc0f;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        #gameCanvas {
+            background-color: #9bbc0f;
+            border: 8px solid #0f380f;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            max-width: 100%;
+            height: auto;
+        }
+
+        .mobile-controls {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            grid-template-rows: repeat(3, 80px);
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .control-btn {
+            background-color: #0f380f;
+            color: #9bbc0f;
+            border: 3px solid #9bbc0f;
+            border-radius: 10px;
+            font-size: 2em;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .control-btn:active {
+            background-color: #9bbc0f;
+            color: #0f380f;
+            transform: scale(0.95);
+        }
+
+        .control-btn.up { grid-column: 2; }
+        .control-btn.left { grid-column: 1; grid-row: 2; }
+        .control-btn.center {
+            grid-column: 2;
+            grid-row: 2;
+            background-color: #306230;
+            border-color: #0f380f;
+            font-size: 1em;
+            cursor: default;
+        }
+        .control-btn.right { grid-column: 3; grid-row: 2; }
+        .control-btn.down { grid-column: 2; grid-row: 3; }
+
+        #gameOverScreen {
+            position: absolute;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(15, 56, 15, 0.95);
+            color: #9bbc0f;
+            border-radius: 10px;
+            padding: 40px;
+            inset: 0;
+        }
+
+        #gameOverScreen.show {
+            display: flex;
+        }
+
+        .restart-btn {
+            margin-top: 20px;
+            background-color: #9bbc0f;
+            color: #0f380f;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .restart-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Fireworks Styles */
+        .fireworks-wrapper {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            background: #000;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .fireworks-wrapper canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
         .footer {
             background: #1B3C53;
             padding: 30px;
@@ -361,7 +489,7 @@
             opacity: 0.8;
         }
 
-        /* Responsive design for mobile devices */
+        /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2em;
@@ -384,15 +512,33 @@
             .social-links {
                 flex-direction: column;
             }
+
+            .interactives {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .box {
+                min-width: 100%;
+            }
+
+            #gameCanvas {
+                width: 100%;
+                height: auto;
+            }
+
+            .mobile-controls {
+                grid-template-columns: repeat(3, 60px);
+                grid-template-rows: repeat(3, 60px);
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header Section: Profile image, name, and basic info -->
+        <!-- Header Section -->
         <div class="header">
             <div class="header-content">
-                <!-- Replace with your actual GitHub profile image URL -->
                 <img src="https://github.com/Kenosis0.png" alt="John Romel Flores" class="profile-img">
                 <h1>John Romel Flores</h1>
                 <p class="subtitle">🎮 Aspiring Game Developer</p>
@@ -400,10 +546,9 @@
             </div>
         </div>
 
-        <!-- Main Content Area -->
+        <!-- Main Content -->
         <div class="content">
-            
-            <!-- About Me Section -->
+            <!-- About Me -->
             <div class="section">
                 <h2 class="section-title">
                     <span class="icon">👨‍💻</span>
@@ -417,7 +562,7 @@
                 </p>
             </div>
 
-            <!-- Current Focus Section -->
+            <!-- Current Focus -->
             <div class="section">
                 <h2 class="section-title">
                     <span class="icon">🎯</span>
@@ -433,14 +578,13 @@
                 </div>
             </div>
 
-            <!-- Skills & Technologies Section with Progress Bars -->
+            <!-- Skills & Technologies -->
             <div class="section">
                 <h2 class="section-title">
                     <span class="icon">🛠️</span>
                     Skills & Technologies
                 </h2>
                 <div class="skills-grid">
-                    <!-- Godot Engine skill card -->
                     <div class="skill-card">
                         <div class="skill-name">Godot Engine</div>
                         <div class="skill-level">GDScript • Game Development</div>
@@ -448,7 +592,6 @@
                             <div class="progress-fill" style="width: 75%;"></div>
                         </div>
                     </div>
-                    <!-- VS Code skill card -->
                     <div class="skill-card">
                         <div class="skill-name">VS Code</div>
                         <div class="skill-level">Primary IDE</div>
@@ -456,7 +599,6 @@
                             <div class="progress-fill" style="width: 80%;"></div>
                         </div>
                     </div>
-                    <!-- Python skill card -->
                     <div class="skill-card">
                         <div class="skill-name">Python</div>
                         <div class="skill-level">Scripting & Automation</div>
@@ -464,7 +606,6 @@
                             <div class="progress-fill" style="width: 60%;"></div>
                         </div>
                     </div>
-                    <!-- C++ skill card -->
                     <div class="skill-card">
                         <div class="skill-name">C++</div>
                         <div class="skill-level">Game Programming</div>
@@ -474,7 +615,6 @@
                     </div>
                 </div>
 
-                <!-- Technology badges -->
                 <div class="badges">
                     <span class="badge">🎮 Game Development</span>
                     <span class="badge">💻 Programming</span>
@@ -485,29 +625,25 @@
                 </div>
             </div>
 
-            <!-- Portfolio Stats Section -->
+            <!-- Portfolio Stats -->
             <div class="section">
                 <h2 class="section-title">
                     <span class="icon">📊</span>
                     Portfolio Statistics
                 </h2>
                 <div class="stats-grid">
-                    <!-- Year in progress stat -->
                     <div class="stat-card">
                         <div class="stat-value">2nd</div>
                         <div class="stat-label">Year Student</div>
                     </div>
-                    <!-- Projects stat - update this as you create projects -->
                     <div class="stat-card">
                         <div class="stat-value">5+</div>
                         <div class="stat-label">Projects in Progress</div>
                     </div>
-                    <!-- Technologies stat -->
                     <div class="stat-card">
                         <div class="stat-value">4+</div>
                         <div class="stat-label">Technologies</div>
                     </div>
-                    <!-- Hours of learning stat -->
                     <div class="stat-card">
                         <div class="stat-value">100+</div>
                         <div class="stat-label">Hours of Learning</div>
@@ -515,14 +651,13 @@
                 </div>
             </div>
 
-            <!-- Upcoming Projects Section -->
+            <!-- Upcoming Projects -->
             <div class="section">
                 <h2 class="section-title">
                     <span class="icon">🚀</span>
                     Upcoming Projects
                 </h2>
                 <div class="projects-grid">
-                    <!-- Project 1: 2D Platformer -->
                     <div class="project-card">
                         <div class="project-title">2D Platformer Game</div>
                         <div class="project-description">
@@ -535,7 +670,6 @@
                             <span class="tech-tag">2D</span>
                         </div>
                     </div>
-                    <!-- Project 2: Puzzle Game -->
                     <div class="project-card">
                         <div class="project-title">Puzzle Mechanics Prototype</div>
                         <div class="project-description">
@@ -548,7 +682,6 @@
                             <span class="tech-tag">Prototyping</span>
                         </div>
                     </div>
-                    <!-- Project 3: Game Tools -->
                     <div class="project-card">
                         <div class="project-title">Game Development Tools</div>
                         <div class="project-description">
@@ -564,39 +697,332 @@
                 </div>
             </div>
 
-            <!-- Connect With Me Section -->
+            <!-- Connect With Me -->
             <div class="section">
                 <h2 class="section-title">
                     <span class="icon">🤝</span>
                     Connect With Me
                 </h2>
                 <div class="social-links">
-                    <!-- GitHub profile link -->
                     <a href="https://github.com/Kenosis0" class="social-link" target="_blank">
                         <span>💻</span> GitHub
                     </a>
-                    <!-- Add more social links as needed - uncomment and update URLs -->
-                    <!-- 
-                    <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">
-                        <span>💼</span> LinkedIn
-                    </a>
-                    <a href="https://twitter.com/yourhandle" class="social-link" target="_blank">
-                        <span>🐦</span> Twitter
-                    </a>
-                    <a href="mailto:your.email@example.com" class="social-link">
-                        <span>📧</span> Email
-                    </a>
-                    -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Games -->
+        <div class="interactives">
+            <!-- Snake Game -->
+            <div class="box">
+                <div class="snake-wrapper">
+                    <div class="game-container">
+                        <h1>🐍 SNAKE</h1>
+                        <div class="score-board">Score: <span id="score">0</span></div>
+
+                        <div style="position: relative;">
+                            <canvas id="gameCanvas" width="500" height="500"></canvas>
+                            <div id="gameOverScreen">
+                                <h2>GAME OVER</h2>
+                                <p>Final Score: <span id="finalScore">0</span></p>
+                                <button class="restart-btn" onclick="restartGame()">PLAY AGAIN</button>
+                            </div>
+                        </div>
+
+                        <div class="mobile-controls">
+                            <button class="control-btn up" id="btnUp">▲</button>
+                            <button class="control-btn left" id="btnLeft">◄</button>
+                            <div class="control-btn center">🐍</div>
+                            <button class="control-btn right" id="btnRight">►</button>
+                            <button class="control-btn down" id="btnDown">▼</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Fireworks -->
+            <div class="box">
+                <div class="fireworks-wrapper">
+                    <canvas id="fireworksCanvas"></canvas>
+                </div>
+            </div>
         </div>
 
-        <!-- Footer Section -->
+        <!-- Footer -->
         <div class="footer">
             <p>💡 "Every great game starts with a single line of code"</p>
             <p style="margin-top: 10px; font-size: 0.9em;">© 2024 John Romel Flores • Built with passion for games</p>
         </div>
     </div>
-</body>
-</html>
+
+    <!-- Snake Game Script -->
+    <script>
+        const snake_canvas = document.getElementById('gameCanvas');
+        const snake_ctx = snake_canvas.getContext('2d');
+        const scoreEl = document.getElementById('score');
+        const finalScoreEl = document.getElementById('finalScore');
+        const gameOverScreen = document.getElementById('gameOverScreen');
+
+        const TILE = 20;
+        const GRID = 25;
+        const SPEED = 100;
+        
+        let snake, food, dir, nextDir, score, loop, running;
+
+        function init() {
+            snake = [{x: 5, y: 5}, {x: 4, y: 5}, {x: 3, y: 5}];
+            dir = nextDir = 'RIGHT';
+            score = 0;
+            running = true;
+            spawnFood();
+            scoreEl.textContent = score;
+            gameOverScreen.classList.remove('show');
+            clearInterval(loop);
+            loop = setInterval(update, SPEED);
+        }
+
+        function spawnFood() {
+            do {
+                food = {
+                    x: Math.floor(Math.random() * GRID),
+                    y: Math.floor(Math.random() * GRID)
+                };
+            } while (snake.some(s => s.x === food.x && s.y === food.y));
+        }
+
+        function update() {
+            dir = nextDir;
+            const head = {...snake[0]};
+            
+            if (dir === 'UP') head.y--;
+            if (dir === 'DOWN') head.y++;
+            if (dir === 'LEFT') head.x--;
+            if (dir === 'RIGHT') head.x++;
+
+            if (head.x < 0 || head.y < 0 || head.x >= GRID || head.y >= GRID ||
+                snake.some(s => s.x === head.x && s.y === head.y)) {
+                return endGame();
+            }
+
+            snake.unshift(head);
+
+            if (head.x === food.x && head.y === food.y) {
+                score += 10;
+                scoreEl.textContent = score;
+                spawnFood();
+            } else {
+                snake.pop();
+            }
+
+            draw();
+        }
+
+        function draw() {
+            snake_ctx.fillStyle = '#9bbc0f';
+            snake_ctx.fillRect(0, 0, snake_canvas.width, snake_canvas.height);
+
+            snake_ctx.fillStyle = '#306230';
+            snake_ctx.fillRect(food.x * TILE, food.y * TILE, TILE, TILE);
+
+            snake.forEach((s, i) => {
+                snake_ctx.fillStyle = i ? '#306230' : '#0f380f';
+                snake_ctx.fillRect(s.x * TILE, s.y * TILE, TILE, TILE);
+            });
+        }
+
+        function endGame() {
+            clearInterval(loop);
+            running = false;
+            finalScoreEl.textContent = score;
+            gameOverScreen.classList.add('show');
+        }
+
+        function restartGame() {
+            init();
+        }
+
+        document.addEventListener('keydown', e => {
+            if (!running) return;
+            if (e.key === 'ArrowUp' && dir !== 'DOWN') nextDir = 'UP';
+            if (e.key === 'ArrowDown' && dir !== 'UP') nextDir = 'DOWN';
+            if (e.key === 'ArrowLeft' && dir !== 'RIGHT') nextDir = 'LEFT';
+            if (e.key === 'ArrowRight' && dir !== 'LEFT') nextDir = 'RIGHT';
+        });
+
+        ['Up', 'Down', 'Left', 'Right'].forEach(d => {
+            document.getElementById('btn' + d).onclick = () => {
+                if (!running) return;
+                if (d === 'Up' && dir !== 'DOWN') nextDir = 'UP';
+                if (d === 'Down' && dir !== 'UP') nextDir = 'DOWN';
+                if (d === 'Left' && dir !== 'RIGHT') nextDir = 'LEFT';
+                if (d === 'Right' && dir !== 'LEFT') nextDir = 'RIGHT';
+            };
+        });
+
+        init();
+    </script>
+
+
+
+
+
+    <!-- Fireworks Script -->
+    <script>
+        const canvas = document.getElementById('fireworksCanvas');
+        const ctx = canvas.getContext('2d');
+        const wrapper = canvas.parentElement;
+        
+        function resizeCanvas() {
+            canvas.width = wrapper.clientWidth;
+            canvas.height = wrapper.clientHeight;
+        }
+        
+        resizeCanvas();
+        
+        window.addEventListener('resize', resizeCanvas);
+        
+        class Particle {
+            constructor(x, y, color) {
+                this.x = x;
+                this.y = y;
+                this.color = color;
+                this.velocity = {
+                    x: (Math.random() - 0.5) * 8,
+                    y: (Math.random() - 0.5) * 8
+                };
+                this.alpha = 1;
+                this.decay = Math.random() * 0.015 + 0.01;
+                this.gravity = 0.05;
+                this.size = Math.random() * 3 + 1;
+            }
+            
+            update() {
+                this.velocity.y += this.gravity;
+                this.x += this.velocity.x;
+                this.y += this.velocity.y;
+                this.alpha -= this.decay;
+            }
+            
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.alpha;
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+        
+        class Firework {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = canvas.height;
+                this.targetY = Math.random() * canvas.height * 0.5 + 50;
+                this.velocity = (this.y - this.targetY) / 60;
+                this.particles = [];
+                this.exploded = false;
+                this.color = `hsl(${Math.random() * 360}, 100%, 60%)`;
+                this.trailParticles = [];
+            }
+            
+            update() {
+                if (!this.exploded) {
+                    this.y -= this.velocity;
+                    
+                    // Add trail
+                    if (Math.random() < 0.3) {
+                        this.trailParticles.push({
+                            x: this.x,
+                            y: this.y,
+                            alpha: 0.5,
+                            size: 2
+                        });
+                    }
+                    
+                    if (this.y <= this.targetY) {
+                        this.explode();
+                    }
+                } else {
+                    this.particles.forEach((p, i) => {
+                        p.update();
+                        if (p.alpha <= 0) {
+                            this.particles.splice(i, 1);
+                        }
+                    });
+                }
+                
+                // Update trail
+                this.trailParticles.forEach((t, i) => {
+                    t.alpha -= 0.02;
+                    if (t.alpha <= 0) {
+                        this.trailParticles.splice(i, 1);
+                    }
+                });
+            }
+            
+            explode() {
+                this.exploded = true;
+                const particleCount = Math.random() * 50 + 100;
+                
+                for (let i = 0; i < particleCount; i++) {
+                    this.particles.push(new Particle(this.x, this.y, this.color));
+                }
+            }
+            
+            draw() {
+                if (!this.exploded) {
+                    // Draw trail
+                    this.trailParticles.forEach(t => {
+                        ctx.save();
+                        ctx.globalAlpha = t.alpha;
+                        ctx.fillStyle = this.color;
+                        ctx.beginPath();
+                        ctx.arc(t.x, t.y, t.size, 0, Math.PI * 2);
+                        ctx.fill();
+                        ctx.restore();
+                    });
+                    
+                    // Draw rocket
+                    ctx.fillStyle = this.color;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, 3, 0, Math.PI * 2);
+                    ctx.fill();
+                } else {
+                    this.particles.forEach(p => p.draw());
+                }
+            }
+            
+            isDone() {
+                return this.exploded && this.particles.length === 0;
+            }
+        }
+        
+        const fireworks = [];
+        let lastFireworkTime = 0;
+        
+        function animate(currentTime) {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Launch new fireworks
+            if (currentTime - lastFireworkTime > Math.random() * 500 + 500) {
+                fireworks.push(new Firework());
+                lastFireworkTime = currentTime;
+            }
+            
+            // Update and draw fireworks
+            fireworks.forEach((fw, i) => {
+                fw.update();
+                fw.draw();
+                
+                if (fw.isDone()) {
+                    fireworks.splice(i, 1);
+                }
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        
+        requestAnimationFrame(animate);
+    </script>
